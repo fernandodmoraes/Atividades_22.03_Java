@@ -1,0 +1,38 @@
+Atividade 01
+import java.util.Scanner;
+
+public class Atividade01 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);				
+		
+		System.out.println("Escolha uma operação.");
+		System.out.println("1 - SOMA:");
+		System.out.println("2 - SUBTRAÇÂO:");
+		System.out.println("3 - DIVISÂO:");
+		System.out.println("4 - MULTIPLICAÇÃO:");
+		Integer escolha = scan.nextInt();
+
+		System.out.print("Digitite um número: ");
+		int numero1 = scan.nextInt();
+		System.out.print("Digitite outro número: ");
+		int numero2 = scan.nextInt();
+		Integer resul = numero1 + numero2;
+		scan.close();
+		
+		switch (escolha) {
+		case 1:
+			System.out.println(numero1 + " + " + numero2 + " = " + resul);
+			break;
+		case 2:
+			System.out.println(numero1 + " - " + numero2 + " = " + resul);
+			break;
+		case 3:
+			System.out.println(numero1 + " / " + numero2 + " = " + resul);
+			break;
+		case 4:
+			System.out.println(numero1 + " * " + numero2 + " = " + resul);
+			break;
+	    }		
+	  }
+	}
