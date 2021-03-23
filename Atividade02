@@ -1,0 +1,43 @@
+Atividade 02
+import java.util.Scanner;
+
+public class Atividade02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);		
+		String nome;
+		Float salto1, salto2, salto3, salto4, salto5;
+					
+		System.out.print("Informe o nome do Atleta: ");
+		nome = scan.nextLine();
+		System.out.print("Informe as Distância dos primeiro salto do Atleta: ");
+		scan.hasNextLine();
+		salto1 = scan.nextFloat();
+		System.out.print("Informe as Distância dos segundo salto do Atleta: ");
+		salto2 = scan.nextFloat();
+		System.out.print("Informe as Distância dos terceiro salto do Atleta: ");
+		salto3 = scan.nextFloat();
+		System.out.print("Informe as Distância dos quarto salto do Atleta: ");
+		salto4 = scan.nextFloat();
+		System.out.print("Informe as Distância dos quinto salto do Atleta: ");
+		salto5 = scan.nextFloat();
+		System.out.println("-----------------------------------------------------");
+		Float media = ((salto1+salto2+salto3+salto4+salto5)/5);
+		scan.close();
+		
+		System.out.println();
+		System.out.println("Atleta: "+ nome);
+		System.out.println();
+		System.out.println("Primerio Salto: "+ salto1);
+		System.out.println("Segundo Salto: "+ salto2);
+		System.out.println("Terceiro Salto: "+ salto3);
+		System.out.println("Quarto Salto: "+ salto4);
+		System.out.println("Quinto Salto: "+ salto5);
+		System.out.println();		
+		System.out.println("Resultado Final: ");
+		System.out.println("Atleta: "+ nome);
+		System.out.println("Saltos: "+ salto1 + " - " + salto2 + " - " + salto3 + " - " + salto4 + " - " + salto5);
+		System.out.println("Média dos saltos: " + media);
+			
+	}
+}
